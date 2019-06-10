@@ -7,7 +7,7 @@
       Hello Mark
     </h1>
     <ul v-if="showList">
-      <li>fgfg</li>
+      <li v-for="item in dd">{{item}}</li>
       <li>dfdf</li>
       <li>fghgh</li>
     </ul>
@@ -18,7 +18,11 @@
 export default {
   name: 'AdminProfile',
   data() {
+
     return {
+      dd: [
+        1, 23, 4, 45, 3, 'fd',
+      ],
       showList: false,
     };
   },
